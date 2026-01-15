@@ -1,0 +1,58 @@
+# Images Directory
+
+This directory is for storing images and screenshots used in the tutorial.
+
+## Suggested Images to Add
+
+### Part 1: Raspberry Pi Setup
+- Raspberry Pi Zero 2W with Ethernet adapter
+- Fritz!Box network connections page
+- Static IP configuration
+
+### Part 2: AdGuard Home
+- AdGuard Home dashboard
+- Filter configuration page
+- Query log examples
+- Blocked queries statistics
+
+### Part 3: PiVPN
+- WireGuard QR code example
+- VPN client connection screens (Android/iOS)
+- PiVPN status output
+
+### Part 4: Tailscale
+- Tailscale admin console
+- Device list view
+- MagicDNS settings
+
+### Part 5: DoH/DoT/DDNS
+- Let's Encrypt certificate success
+- DuckDNS configuration
+- SSL certificate details
+
+### Part 6: Fritz!Box Integration
+- Fritz!Box port forwarding settings
+- DNS configuration page
+- Network topology diagram
+
+## Image Naming Convention
+
+Use descriptive names with part numbers:
+- `part1-raspberry-pi-hardware.jpg`
+- `part2-adguard-dashboard.png`
+- `part3-pivpn-qr-code.png`
+- etc.
+
+## Image Format Recommendations
+
+- **Screenshots**: PNG format for clarity
+- **Photos**: JPG format for smaller file sizes
+- **Diagrams**: SVG format for scalability (or PNG)
+- Keep images under 1MB when possible
+
+## How to Reference Images
+
+In markdown files, reference images like:
+```markdown
+![Description](../images/filename.png)
+```
