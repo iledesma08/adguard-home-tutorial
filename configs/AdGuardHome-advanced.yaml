@@ -2,8 +2,11 @@ bind_host: 0.0.0.0
 bind_port: 3000
 beta_bind_port: 0
 users:
+  # IMPORTANT: Replace the password hash below with your own!
+  # Generate a new hash by completing the initial setup wizard at http://your-pi-ip:3000
+  # Or use: htpasswd -nbB admin yourpassword | cut -d: -f2
   - name: admin
-    password: $2a$10$CHANGE_THIS_PASSWORD_HASH
+    password: $2a$10$CHANGE_THIS_PASSWORD_HASH_BEFORE_USE
 auth_attempts: 5
 block_auth_min: 15
 http_proxy: ""
@@ -85,7 +88,8 @@ dns:
   use_http3_upstreams: false
 tls:
   enabled: true
-  server_name: your-domain.example.com
+  # IMPORTANT: Replace with your actual domain from DDNS setup (e.g., your-home.duckdns.org)
+  server_name: your-home.duckdns.org
   force_https: true
   port_https: 443
   port_dns_over_tls: 853
